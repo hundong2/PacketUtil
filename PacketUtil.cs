@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +24,7 @@ namespace PacketUtil
             newval.AddSubValues(Values.Builder("h5", sizeof(double), "double", 5));
             newval.AddSubValues(Values.Builder("h7", sizeof(float), "float", 13));
 
+            //Values newv = GetValuesFromJson("packet.json");
             float f = 12.33f;
             double val = newval.GetValue<double>(temp, "h5", ConstVariable.TYPEVALUE, sizeof(double));
             double he = BitConverter.ToDouble(temp2, 0);
@@ -29,6 +33,21 @@ namespace PacketUtil
             Console.WriteLine(BitConverter.ToString(BitConverter.GetBytes(f)));
             Console.WriteLine(Util.PrintByteArray(temp, Util.VALUE_TYPE.HEXVALUE));
             
+        }
+        static public Values GetValuesFromJson(string path)
+        {
+            Values newval = null;
+            using (StreamReader file = File.OpenText(path))
+            using (JsonTextReader reader = new JsonTextReader(file))
+            {
+                JObject json = (JObject)JToken.ReadFrom(reader);
+                
+                //foreach(var Obj in json)
+                {
+                    newval = Values.Builder(reader.Value.ToString(), 0, "struct", 0);
+                }
+            }
+            return newval;
         }
     }
 }

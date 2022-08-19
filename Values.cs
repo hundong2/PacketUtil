@@ -8,7 +8,6 @@ namespace PacketUtil
 {
     class Values 
     {
-
         public string Name { get; private set; }    //vale field name
         public int ArrayPosition { private get; set; } //start Position
         public int Length { get; private set; }     //vale field length
