@@ -13,6 +13,9 @@ namespace PacketUtil
     {
         static void Main(string[] args)
         {
+            object mValue = returnTest();
+            Type mType = mValue.GetType();
+
             TestUtilGetByteFieldValue();
 
         }
@@ -29,15 +32,28 @@ namespace PacketUtil
             Values newval = Values.Builder("hello", 9, "ARRAY", 0);
             newval.AddSubValues(Values.Builder("h", 1, "byte", 0)); //name, length, type, stPosition
             newval.AddSubValues(Values.Builder("h2", 2, "ushort", 1));
-            newval.AddSubValues(Values.Builder("h3", 7, "int", 3));
-            newval.AddSubValues(Values.Builder("h4", 4, "int", 3));
+            newval.AddSubValues(Values.Builder("h3", 4, "int", 3));
+            var BuilderByteFiled = Values.Builder("h4", 4, "int", 3);
+            BuilderByteFiled.AddSubValues(Values.Builder("h4123", 4, "bit", 3));
+            newval.AddSubValues(BuilderByteFiled);
             newval.AddSubValues(Values.Builder("h5", sizeof(double), "double", 5));
             newval.AddSubValues(Values.Builder("h7", sizeof(float), "float", 13));
 
-            //Values newv = GetValuesFromJson("packet.json");
+            bool check = newval.SeekFieldName("h41234");
 
+            Console.WriteLine(newval.ToParsing(ref temp));
+
+
+            Console.WriteLine(newval.ToString());
+            Values newv = GetValuesFromJson("packet.json");
+
+            Type t = typeof(double);
             float f = 12.33f;
             double val = newval.GetValue<double>(temp, "h5", ConstVariable.TYPEVALUE, sizeof(double));
+            object value123 = newval.GetValue(temp, "h5", ConstVariable.TYPEVALUE);
+            string value123str = value123.ToString(); //object return value function 
+            string value123strfunc = newval.GetStrValue(temp, "h5"); //string return function
+
             ushort val_short = newval.GetValue<ushort>(temp, "h2", ConstVariable.TYPEVALUE, sizeof(ushort));
             byte bytevval = newval.GetValue<byte>(temp, "h", ConstVariable.TYPEVALUE, sizeof(byte));
             byte tmepValue_1 = Util.GetByteFieldValue<byte>(bytevval, 0, 5);
@@ -45,8 +61,7 @@ namespace PacketUtil
 
 
             double he = BitConverter.ToDouble(temp2, 0);
-            string valstring = newval.GetValue(temp, "h7");
-
+            
             byte tmepValue1 = Util.GetByteFieldValue<byte>(0xFF, 0, 2); //0 bit ~ 1, 2 bit ( length 3 )
             ushort tempShort = Util.GetByteFieldValue<ushort>(0xF1FF, 0, 1); // 0bit, 10 bit ( length 3)
             ushort tempShort2 = Util.GetByteFieldValue<ushort>(0xF1FF, 1, 2); // 1bit ~ 2, 10 bit ( length 2)
@@ -63,6 +78,12 @@ namespace PacketUtil
             Console.WriteLine(Util.PrintByteArray(temp, Util.VALUE_TYPE.HEXVALUE));
         }
 
+        static public object returnTest()
+        {
+            object mValue;
+            mValue = (double)1;
+            return (double)mValue;
+        }
 
         /// <summary>
         /// Json File read from *.json ( bin/debug folder ) 

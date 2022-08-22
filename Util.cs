@@ -11,7 +11,8 @@ namespace PacketUtil
         public enum VALUE_TYPE
         {
             INTVALUE = 0,
-            HEXVALUE = 1
+            HEXVALUE = 1,
+            BYTEARR = 2
         };
 
         #region Bit Field Calculator
@@ -69,9 +70,89 @@ namespace PacketUtil
         }
         #endregion
 
-        public static T As<T>(this object o)
+        /// <summary>
+        /// Get information of type, type size and Type of type
+        /// </summary>
+        /// <param name="type">type name string</param>
+        /// <returns>Tuple variable of type information</returns>
+        static public Tuple<int,Type> GetInfoType(string type)
         {
-            return (T)o;
+            Tuple<int, Type> returnSize = null;
+
+            switch(type)
+            {
+                case "int":
+                    returnSize = new Tuple<int, Type>(sizeof(int), typeof(int));
+                    break;
+                case "uint":
+                    returnSize = new Tuple<int, Type>(sizeof(uint), typeof(uint)); 
+                    break;
+                case "float":
+                    returnSize = new Tuple<int, Type>(sizeof(double), typeof(double));
+                    break;
+                case "double":
+                    returnSize = new Tuple<int, Type>(sizeof(double), typeof(double));
+                    break;
+                case "short":
+                    returnSize = new Tuple<int, Type>(sizeof(short), typeof(short));
+                    break;
+                case "ushort":
+                    returnSize = new Tuple<int, Type>(sizeof(ushort), typeof(ushort));
+                    break;
+                case "byte":
+                    returnSize = new Tuple<int, Type>(sizeof(byte), typeof(byte));
+                    break;
+                default:
+                    break;
+            }
+
+            return returnSize;
         }
+
+
+        /// <summary>
+        /// Get Packet Value 
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="name"></param>
+        /// <param name="pType"></param>
+        /// <param name="typeofvalue"></param>
+        /// <param name="length"></param>
+        /// <param name="arrayposition"></param>
+        /// <returns></returns>
+        static public Object DecoderPacket(byte[] arr, string pType, string typeofvalue, int length, int arrayposition)
+        {
+
+            if (pType == ConstVariable.ORIGIN)
+            {
+
+                Byte[] SubData = new Byte[length];
+                Buffer.BlockCopy(arr, arrayposition, SubData, 0, SubData.Length);
+                return (object)SubData;
+            }
+            else if (pType == ConstVariable.TYPEVALUE)
+            {
+                var typeInfo = Util.GetInfoType(typeofvalue);
+                if (typeInfo == null) return (object)null;
+                var type = typeInfo.ToValueTuple().Item2;
+                Byte[] SubData = new Byte[typeInfo.ToValueTuple().Item1];
+                int offset = 0;
+                Buffer.BlockCopy(arr, arrayposition, SubData, 0,Math.Min(length, arr.Length - arrayposition));
+
+                if (type == typeof(sbyte)) return (sbyte)((sbyte)SubData[offset]);
+                if (type == typeof(byte)) return (byte)SubData[offset];
+                if (type == typeof(short)) return (short)((short)(SubData[offset + 1] << 8 | SubData[offset]));
+                if (type == typeof(ushort)) return (ushort)((ushort)(SubData[offset + 1] << 8 | SubData[offset]));
+                if (type == typeof(int)) return (int)(SubData[offset + 3] << 24 | SubData[offset + 2] << 16 | SubData[offset + 1] << 8 | SubData[offset]);
+                if (type == typeof(uint)) return (uint)((uint)SubData[offset + 3] << 24 | (uint)SubData[offset + 2] << 16 | (uint)SubData[offset + 1] << 8 | SubData[offset]);
+                if (type == typeof(long)) return (long)((long)SubData[offset + 7] << 56 | (long)SubData[offset + 6] << 48 | (long)SubData[offset + 5] << 40 | (long)SubData[offset + 4] << 32 | (long)SubData[offset + 3] << 24 | (long)SubData[offset + 2] << 16 | (long)SubData[offset + 1] << 8 | SubData[offset]);
+                if (type == typeof(ulong)) return (ulong)((ulong)SubData[offset + 7] << 56 | (ulong)SubData[offset + 6] << 48 | (ulong)SubData[offset + 5] << 40 | (ulong)SubData[offset + 4] << 32 | (ulong)SubData[offset + 3] << 24 | (ulong)SubData[offset + 2] << 16 | (ulong)SubData[offset + 1] << 8 | SubData[offset]);
+                if (type == typeof(double)) return (double)(BitConverter.ToDouble(SubData, 0));
+                if (type == typeof(float)) return (float)(BitConverter.ToDouble(SubData, 0));
+                throw new NotImplementedException();
+            }
+            return (object)null;
+        }
+
     }
 }
