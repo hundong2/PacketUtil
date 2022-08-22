@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PacketUtil
 {
+    /// <summary>
+    /// this class Used Util.cs in PacketUtil namespace 
+    /// </summary>
     class Values 
     {
         public string Name { get; private set; }    //vale field name
@@ -39,7 +42,6 @@ namespace PacketUtil
         {
             Name = name;
             this.Length = length;
-
             ArrayPosition = 0;
         }
         protected Values(string name, int length, string typeval, int arrayposition)

@@ -13,6 +13,43 @@ namespace PacketUtil
             INTVALUE = 0,
             HEXVALUE = 1
         };
+
+        #region Bit Field Calculator
+        /// <summary>
+        /// function name : GetByteFieldValue
+        /// variable bit field variable check function
+        /// 0 <= startPosition, length <= 32bit(4byte) 
+        /// default used byte
+        /// </summary>
+        /// <typeparam name="T">type of variable</typeparam>
+        /// T tpye : byte, unsigned short, signed short, unsigned integer, signed integer
+        /// <param name="targetValue">target variable</param>
+        /// <param name="startPos">bit start position</param>
+        /// <param name="length">bit length from start position</param>
+        /// <returns>check bit field variable ( and )</returns>
+        static public T GetByteFieldValue<T>(T targetValue, int startPos, int length)
+        {
+            int andVariable = 0;
+            foreach(var i in Enumerable.Range(0, length))
+            {
+                andVariable |= 1 << i;
+            }
+            if (typeof(T) == typeof(int))
+                return (T)(object)(Convert.ToInt32(targetValue) & (andVariable << startPos));
+            else if (typeof(T) == typeof(uint))
+                return (T)(object)Convert.ChangeType((int)Convert.ToInt32(targetValue) & (andVariable << startPos), typeof(uint));
+            else if (typeof(T) == typeof(ushort))
+                return (T)(object)Convert.ChangeType((int)Convert.ToInt32(targetValue) & (andVariable << startPos), typeof(ushort));
+            else if (typeof(T) == typeof(short))
+                return (T)(object)Convert.ChangeType((int)Convert.ToInt32(targetValue) & (andVariable << startPos), typeof(short));
+            else if (typeof(T) == typeof(float))
+                return (T)(object)Convert.ChangeType((int)Convert.ToDouble(targetValue) & (andVariable << startPos), typeof(float));
+            else if (typeof(T) == typeof(double))
+                return (T)(object)Convert.ChangeType((int)Convert.ToDouble(targetValue)& (andVariable << startPos), typeof(double));
+            return (T)(object)Convert.ToByte((int)Convert.ToByte(targetValue) & (andVariable << startPos));     
+        }
+
+
         /// <summary>
         /// Byte Array convert to string value
         /// </summary>
@@ -30,6 +67,7 @@ namespace PacketUtil
                 hex_val =  string.Join(" ", bytes);
             return hex_val;
         }
+        #endregion
 
         public static T As<T>(this object o)
         {
