@@ -33,7 +33,9 @@ namespace PacketUtil
             newval.AddSubValues(Values.Builder("h4", 4, "int", 3));
             newval.AddSubValues(Values.Builder("h5", sizeof(double), "double", 5));
             newval.AddSubValues(Values.Builder("h7", sizeof(float), "float", 13));
+
             //Values newv = GetValuesFromJson("packet.json");
+
             float f = 12.33f;
             double val = newval.GetValue<double>(temp, "h5", ConstVariable.TYPEVALUE, sizeof(double));
             ushort val_short = newval.GetValue<ushort>(temp, "h2", ConstVariable.TYPEVALUE, sizeof(ushort));
@@ -75,9 +77,9 @@ namespace PacketUtil
             {
                 JObject json = (JObject)JToken.ReadFrom(reader);
                 
-                //foreach(var Obj in json)
+                foreach(var Obj in json)
                 {
-                    newval = Values.Builder(reader.Value.ToString(), 0, "struct", 0);
+                    //newval = Values.Builder(reader.Value.ToString(), 0, "struct", 0);
                 }
             }
             return newval;
