@@ -11,16 +11,17 @@ namespace PacketUtil
     /// <summary>
     /// this class Used Util.cs in PacketUtil namespace 
     /// </summary>
-    class Values 
+    public class Values 
     {
 
         public string Name { get; private set; }    //vale field name
         public int ArrayPosition { get; private set; } //start Position
         public int Length { get; private set; }     //vale field length
         public string TypeOfValue { get; private set; } //current tpye of class 
+        public double LSB { get; private set; } // LSB Value (option)
         public Values Parent { get; private set; }
+       
         private Dictionary<string, Values> SubValues = new Dictionary<string, Values>();
-
         #region Builder Class of Values
         /// <summary>
         /// 
@@ -28,11 +29,11 @@ namespace PacketUtil
         /// <param name="name"></param>
         /// <param name="length"></param>
         /// <param name="typeval"></param>
-        /// <param name="arrayposition"></param>
+        /// <param name="startposition"></param>
         /// <returns></returns>
-        static public Values Builder(string name, int length, string typeval, int arrayposition)
+        static public Values Builder(string name, string typeval, int startposition, int length, double lsb = 0)
         {
-            return new Values(name, length, typeval, arrayposition);
+            return new Values(name, length, typeval, startposition, lsb);
         }
         #endregion
         #region Protected Constructor
@@ -47,19 +48,19 @@ namespace PacketUtil
             this.Length = length;
             ArrayPosition = 0;
         }
-        protected Values(string name, int length, string typeval, int arrayposition)
+        protected Values(string name, int length, string typeval, int arrayposition, double lsb = 0)
         {
             Name = name;
             var tempValue = Util.GetInfoType(typeval);
             if (tempValue != null)
-                Length = tempValue.Item1;
+                Length = length;
             else
                 Length = 0;
             TypeOfValue = typeval;
             ArrayPosition = arrayposition;
+            LSB = lsb;
         }
         #endregion
-
         #region Add SubValues
         /// <summary>
         /// Sub Field Variable Add 
@@ -71,7 +72,6 @@ namespace PacketUtil
             SubValues[pValue.Name] = pValue;   
         }
         #endregion
-
         #region Value get function set
         /// <summary>
         /// String Value of Packet field 
@@ -92,7 +92,7 @@ namespace PacketUtil
         /// <param name="name">packet field name</param>
         /// <param name="pType">return type</param>
         /// <returns></returns>
-        public Object GetValue(byte[] arr, string name, string pType)
+        public Object GetValue(byte[] arr, string name, string pType = ConstVariable.TYPEVALUE)
         {
             if (SubValues.ContainsKey(name))
             {
@@ -170,7 +170,6 @@ namespace PacketUtil
             return (T)(object)null;
         }
         #endregion
-
         #region function of bit field
         #region Public Function
         ///public bool SeekFieldName(string packetFieldName)
@@ -243,8 +242,7 @@ namespace PacketUtil
         #endregion
 
         #endregion
-
-
+        #region Decoder Packet 
         /// <summary>
         /// Get Packet Value 
         /// </summary>
@@ -260,7 +258,9 @@ namespace PacketUtil
             if(myValue.TypeOfValue == "bit")
             {
                 object parentValue = DecoderPacket(arr, ConstVariable.TYPEVALUE, myValue.Parent);
-                object bitValue = Util.GetByteFieldValue<object>(parentValue, 0, 2); //0 bit ~ 1, 2 bit ( length 3 )
+                object bitValue = Util.GetByteFieldValue<object>(parentValue, myValue.ArrayPosition , myValue.Length);
+                
+                return bitValue;
             }
             if (pType == ConstVariable.ORIGIN)
             {
@@ -292,9 +292,8 @@ namespace PacketUtil
             }
             return (object)null;
         }
-
-
-
+        #endregion
+        #region recursive function set
         /// <summary>
         /// Overrided ToString function For Values Class 
         /// </summary>
@@ -304,7 +303,10 @@ namespace PacketUtil
             string tap = "\t";
             string ReturnValue = "";
             if (TypeOfValue != "bit") tap = "";
-            ReturnValue += string.Format("{2} {0, -10} : {1,5}\n", Name, Values.DecoderPacket(packet,ConstVariable.TYPEVALUE, this), tap);
+            if(this.Parent != null)
+            {
+                ReturnValue += string.Format("{2} {0, -10} : {1,5}\n", Name, Values.DecoderPacket(packet, ConstVariable.TYPEVALUE, this), tap);
+            }
             foreach (var mValue in SubValues)
             {
                 ReturnValue += mValue.Value.ToParsing(ref packet);
@@ -312,8 +314,6 @@ namespace PacketUtil
             return ReturnValue;
 
         }
-
-
         public override string ToString()
         {
             string tap = "\t";
@@ -330,5 +330,6 @@ namespace PacketUtil
             //return base.ToString();
             return ReturnValue;
         }
+        #endregion
     }
 }

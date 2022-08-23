@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace PacketUtil
 {
@@ -44,9 +45,11 @@ namespace PacketUtil
             else if (typeof(T) == typeof(short))
                 return (T)(object)Convert.ChangeType((int)Convert.ToInt32(targetValue) & (andVariable << startPos), typeof(short));
             else if (typeof(T) == typeof(float))
-                return (T)(object)Convert.ChangeType((int)Convert.ToDouble(targetValue) & (andVariable << startPos), typeof(float));
+                return (T)(object)Convert.ChangeType((UInt32)Convert.ToUInt32(targetValue) & (UInt32)(andVariable << startPos), typeof(float));
             else if (typeof(T) == typeof(double))
-                return (T)(object)Convert.ChangeType((int)Convert.ToDouble(targetValue)& (andVariable << startPos), typeof(double));
+                return (T)(object)Convert.ChangeType((UInt64)Convert.ToUInt64(targetValue) & (UInt64)(andVariable << startPos), typeof(double));
+            else if( typeof(T) == typeof(object))
+                return (T)(object)Convert.ChangeType((UInt64)Convert.ToUInt64(targetValue) & (UInt64)(andVariable << startPos), typeof(object));
             return (T)(object)Convert.ToByte((int)Convert.ToByte(targetValue) & (andVariable << startPos));     
         }
 
@@ -102,6 +105,9 @@ namespace PacketUtil
                 case "byte":
                     returnSize = new Tuple<int, Type>(sizeof(byte), typeof(byte));
                     break;
+                case "bit":
+                    returnSize = new Tuple<int, Type>(sizeof(byte), typeof(byte));
+                    break;
                 default:
                     break;
             }
@@ -154,5 +160,22 @@ namespace PacketUtil
             return (object)null;
         }
 
+        #region regex string Real number check 
+        /// <summary>
+        /// 실수 문자열 여부 구하기
+        /// </summary>
+        /// <param name="source">소스 문자열</param>
+        /// <returns>실수 문자열 여부</returns>
+        static public bool IsRealNumberString(string source)
+            {
+                if (string.IsNullOrEmpty(source))
+                {
+                    return false;
+                }
+                return Regex.IsMatch(source, @"^[+-]?\d*(\.?\d*)$");
+            }
+
+
+        #endregion
     }
 }
