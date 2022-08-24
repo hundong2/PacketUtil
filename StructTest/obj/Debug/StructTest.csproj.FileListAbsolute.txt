@@ -1,0 +1,7 @@
+C:\Users\73673\source\repos\PacketUtil\PacketUtil\StructTest\obj\Debug\StructTest.csprojAssemblyReference.cache
+C:\Users\73673\source\repos\PacketUtil\PacketUtil\StructTest\obj\Debug\StructTest.csproj.CoreCompileInputs.cache
+C:\Users\73673\source\repos\PacketUtil\PacketUtil\StructTest\bin\Debug\StructTest.exe.config
+C:\Users\73673\source\repos\PacketUtil\PacketUtil\StructTest\bin\Debug\StructTest.exe
+C:\Users\73673\source\repos\PacketUtil\PacketUtil\StructTest\bin\Debug\StructTest.pdb
+C:\Users\73673\source\repos\PacketUtil\PacketUtil\StructTest\obj\Debug\StructTest.exe
+C:\Users\73673\source\repos\PacketUtil\PacketUtil\StructTest\obj\Debug\StructTest.pdb
