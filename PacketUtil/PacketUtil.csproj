@@ -53,10 +53,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bit.cs" />
     <Compile Include="ConstVariable.cs" />
     <Compile Include="PacketUtil.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Value\Values.cs" />
+    <Compile Include="Value\ValuesReadFromFile.cs" />
     <Compile Include="Value\ValuesUtil.cs" />
   </ItemGroup>
   <ItemGroup>

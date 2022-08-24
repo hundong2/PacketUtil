@@ -7,7 +7,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace PacketUtil
 {
     class PacketUtil
@@ -17,6 +16,8 @@ namespace PacketUtil
             object mValue = returnTest();
             Type mType = mValue.GetType();
 
+
+            
             TestUtilGetByteFieldValue();
             //TestJsonRead();
             //testValueUtil();
@@ -29,7 +30,7 @@ namespace PacketUtil
 
         static public void TestJsonRead()
         {
-            Values newv = GetValuesFromJson("packet.json");
+            string[] newv = ValuesReadFromFile.GetValuesFromJson("packet.json");
         }
         /// <summary>
         /// Util.cs Test of function GetByteFieldValue() Example 
@@ -50,7 +51,8 @@ namespace PacketUtil
             newval.AddSubValues(Values.Builder("h7", "float", 13, sizeof(float)));
 
             bool check = newval.SeekFieldName("h41234");
-
+            
+           
             //parsing temp packet variable 
             Console.WriteLine(newval.ToParsing(ref temp));
             Console.WriteLine(newval.ToString());
@@ -89,28 +91,6 @@ namespace PacketUtil
             object mValue;
             mValue = (double)1;
             return (double)mValue;
-        }
-
-        /// <summary>
-        /// Json File read from *.json ( bin/debug folder ) 
-        /// </summary>
-        /// <param name="path"></param>
-        /// <returns></returns>
-        static public Values GetValuesFromJson(string path)
-        {
-            Values newval = null;
-            StreamReader file = File.OpenText(path);
-
-            using (JsonTextReader reader = new JsonTextReader(file))
-            {
-                JObject json = (JObject)JToken.ReadFrom(reader);
-                
-                foreach(var Obj in json)
-                {
-                    //newval = Values.Builder(reader.Value.ToString(), 0, "struct", 0);
-                }
-            }
-            return newval;
         }
     }
 }

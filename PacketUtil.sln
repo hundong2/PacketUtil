@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1703.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.2017
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacketUtil", "PacketUtil.csproj", "{F50B6560-6879-47E3-8315-2F56D803EFEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacketUtil", "PacketUtil\PacketUtil.csproj", "{F50B6560-6879-47E3-8315-2F56D803EFEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F50E5B95-9AD2-47EB-92C2-4283F785C897}
+		SolutionGuid = {CCD4BB71-216E-496A-822D-90AFD7835B5C}
 	EndGlobalSection
 EndGlobal
