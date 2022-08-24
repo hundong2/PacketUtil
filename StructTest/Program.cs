@@ -32,6 +32,8 @@ namespace StructTest
             }
             int SturctInnerSturctMixSize4 = Marshal.SizeOf(typeof(StructInnerStruct5));
             int MixStructSize = Marshal.SizeOf(typeof(MixStruct));
+            myClass mCls = new myClass();
+            int ClassSize = Marshal.SizeOf(mCls);
             int MixStructArrSize = Marshal.SizeOf(typeof(MixStruct2));
         }
     }

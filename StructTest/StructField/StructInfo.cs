@@ -118,6 +118,15 @@ namespace StructTest.StructField
         [MarshalAs(UnmanagedType.I1)] byte Byte3;
     }
 
+    [StructLayout(LayoutKind.Sequential)]
+    public class myClass
+    {
+        byte[] mValue;
+        public myClass()
+        {
+            mValue = new byte[9];
+        }
+    }
 
 
 
