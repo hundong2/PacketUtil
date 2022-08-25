@@ -9,7 +9,10 @@ namespace PacketUtil.Value
     static public class ValuesUtil
     {
         public const int valueParsingDataLength = 5;
-        
+        /// <summary>
+        /// <value>formatCheckEnum Enum Value</value>
+        /// <type>name, type, start : start position of packet, length of packet field, lsb : calculate for value</type>
+        /// </summary>
         enum formatCheckEnum
         {
             name = 0,

@@ -12,12 +12,7 @@ namespace PacketUtil
     class PacketUtil
     {
         static void Main(string[] args)
-        {
-            object mValue = returnTest();
-            Type mType = mValue.GetType();
-
-
-            
+        {    
             //TestUtilGetByteFieldValue();
             TestJsonRead();
             //testValueUtil();
@@ -28,9 +23,10 @@ namespace PacketUtil
             Console.WriteLine(mTemp.Name, mTemp.ArrayPosition, mTemp.Length);
         }
 
+        //Json Parsing Test
         static public void TestJsonRead()
         {
-            string[] newv = ValuesReadFromFile.GetValuesFromJson("packet.json");
+            var newv = ValuesReadFromFile.GetValuesFromJson("packet.json");
         }
         /// <summary>
         /// Util.cs Test of function GetByteFieldValue() Example 
@@ -86,11 +82,5 @@ namespace PacketUtil
             Console.WriteLine(Util.PrintByteArray(temp, Util.VALUE_TYPE.HEXVALUE));
         }
 
-        static public object returnTest()
-        {
-            object mValue;
-            mValue = (double)1;
-            return (double)mValue;
-        }
     }
 }

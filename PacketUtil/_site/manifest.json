@@ -1,0 +1,224 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/73673/source/repos/PacketUtil/PacketUtil/PacketUtil",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "bP1aW9jgWahj+h3bg5ocAwq1P6v1/2SgAVUrFlprV3I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "GYCStgmsQgqdPdUNh2mew1LbB9N7DJiNsa1EBXAM34c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "q2TdcLIv8LJJ2q1/OHpo9JjN6jYZZILq8ejSEHV1pAI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.ConstVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.ConstVariable.html",
+          "hash": "FgU49tbYekSu61BhsEwLvkAzQQ5lX6xWNnDmfn2ehsg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.Util.VALUE_TYPE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.Util.VALUE_TYPE.html",
+          "hash": "Tjfcsl/yiPrIhIxC8w8RZt4K+U6P7xNxIfVmp1P9PMk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.Util.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.Util.html",
+          "hash": "z7YdRvNY9BDOH+9Jh2zUAhyx5reR3BxzcGyZqUyEzMg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.Value.ValuesReadFromFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.Value.ValuesReadFromFile.html",
+          "hash": "0NWexcFhGYYMvJbyAOTgD3kVsFEodUf7ZWnCJMvstLM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.Value.ValuesUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.Value.ValuesUtil.html",
+          "hash": "j+wNpqnPk87gjOwYiTGHax4vSiSH2tGQWXZ6BPzyM1M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.Value.html",
+          "hash": "lL4wkHYSPRozV7/246X0eeHdmqEmzUm5gOJMAHQnPx4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.Values.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.Values.html",
+          "hash": "HYoeIYnc/93gb6MAn7Mt++M70g3TaX6YpRl7vORtedI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/PacketUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PacketUtil.html",
+          "hash": "YjUGox0orqwec22uSMGTfJOYAQlUCWvPSGGfbznGjPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "iAIT/UbAuRszsSNN3c2bvgz8AHARY/H5bYhNI6IaJ3E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "Oa9PuD4E1hvZnCkVjUgzNBX6S00Zo5YilamTERTZo54="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 8,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

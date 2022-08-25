@@ -1,0 +1,466 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: PacketUtil
+  name: PacketUtil
+  href: api/PacketUtil.html
+  commentId: N:PacketUtil
+  fullName: PacketUtil
+  nameWithType: PacketUtil
+- uid: PacketUtil.ConstVariable
+  name: ConstVariable
+  href: api/PacketUtil.ConstVariable.html
+  commentId: T:PacketUtil.ConstVariable
+  fullName: PacketUtil.ConstVariable
+  nameWithType: ConstVariable
+- uid: PacketUtil.ConstVariable.ORIGIN
+  name: ORIGIN
+  href: api/PacketUtil.ConstVariable.html#PacketUtil_ConstVariable_ORIGIN
+  commentId: F:PacketUtil.ConstVariable.ORIGIN
+  fullName: PacketUtil.ConstVariable.ORIGIN
+  nameWithType: ConstVariable.ORIGIN
+- uid: PacketUtil.ConstVariable.TYPEVALUE
+  name: TYPEVALUE
+  href: api/PacketUtil.ConstVariable.html#PacketUtil_ConstVariable_TYPEVALUE
+  commentId: F:PacketUtil.ConstVariable.TYPEVALUE
+  fullName: PacketUtil.ConstVariable.TYPEVALUE
+  nameWithType: ConstVariable.TYPEVALUE
+- uid: PacketUtil.Util
+  name: Util
+  href: api/PacketUtil.Util.html
+  commentId: T:PacketUtil.Util
+  fullName: PacketUtil.Util
+  nameWithType: Util
+- uid: PacketUtil.Util.DecoderPacket(System.Byte[],System.String,System.String,System.Int32,System.Int32)
+  name: DecoderPacket(Byte[], String, String, Int32, Int32)
+  href: api/PacketUtil.Util.html#PacketUtil_Util_DecoderPacket_System_Byte___System_String_System_String_System_Int32_System_Int32_
+  commentId: M:PacketUtil.Util.DecoderPacket(System.Byte[],System.String,System.String,System.Int32,System.Int32)
+  name.vb: DecoderPacket(Byte(), String, String, Int32, Int32)
+  fullName: PacketUtil.Util.DecoderPacket(System.Byte[], System.String, System.String, System.Int32, System.Int32)
+  fullName.vb: PacketUtil.Util.DecoderPacket(System.Byte(), System.String, System.String, System.Int32, System.Int32)
+  nameWithType: Util.DecoderPacket(Byte[], String, String, Int32, Int32)
+  nameWithType.vb: Util.DecoderPacket(Byte(), String, String, Int32, Int32)
+- uid: PacketUtil.Util.DecoderPacket*
+  name: DecoderPacket
+  href: api/PacketUtil.Util.html#PacketUtil_Util_DecoderPacket_
+  commentId: Overload:PacketUtil.Util.DecoderPacket
+  isSpec: "True"
+  fullName: PacketUtil.Util.DecoderPacket
+  nameWithType: Util.DecoderPacket
+- uid: PacketUtil.Util.GetByteFieldValue*
+  name: GetByteFieldValue
+  href: api/PacketUtil.Util.html#PacketUtil_Util_GetByteFieldValue_
+  commentId: Overload:PacketUtil.Util.GetByteFieldValue
+  isSpec: "True"
+  fullName: PacketUtil.Util.GetByteFieldValue
+  nameWithType: Util.GetByteFieldValue
+- uid: PacketUtil.Util.GetByteFieldValue``1(``0,System.Int32,System.Int32)
+  name: GetByteFieldValue<T>(T, Int32, Int32)
+  href: api/PacketUtil.Util.html#PacketUtil_Util_GetByteFieldValue__1___0_System_Int32_System_Int32_
+  commentId: M:PacketUtil.Util.GetByteFieldValue``1(``0,System.Int32,System.Int32)
+  name.vb: GetByteFieldValue(Of T)(T, Int32, Int32)
+  fullName: PacketUtil.Util.GetByteFieldValue<T>(T, System.Int32, System.Int32)
+  fullName.vb: PacketUtil.Util.GetByteFieldValue(Of T)(T, System.Int32, System.Int32)
+  nameWithType: Util.GetByteFieldValue<T>(T, Int32, Int32)
+  nameWithType.vb: Util.GetByteFieldValue(Of T)(T, Int32, Int32)
+- uid: PacketUtil.Util.GetInfoType(System.String)
+  name: GetInfoType(String)
+  href: api/PacketUtil.Util.html#PacketUtil_Util_GetInfoType_System_String_
+  commentId: M:PacketUtil.Util.GetInfoType(System.String)
+  fullName: PacketUtil.Util.GetInfoType(System.String)
+  nameWithType: Util.GetInfoType(String)
+- uid: PacketUtil.Util.GetInfoType*
+  name: GetInfoType
+  href: api/PacketUtil.Util.html#PacketUtil_Util_GetInfoType_
+  commentId: Overload:PacketUtil.Util.GetInfoType
+  isSpec: "True"
+  fullName: PacketUtil.Util.GetInfoType
+  nameWithType: Util.GetInfoType
+- uid: PacketUtil.Util.IsRealNumberString(System.String)
+  name: IsRealNumberString(String)
+  href: api/PacketUtil.Util.html#PacketUtil_Util_IsRealNumberString_System_String_
+  commentId: M:PacketUtil.Util.IsRealNumberString(System.String)
+  fullName: PacketUtil.Util.IsRealNumberString(System.String)
+  nameWithType: Util.IsRealNumberString(String)
+- uid: PacketUtil.Util.IsRealNumberString*
+  name: IsRealNumberString
+  href: api/PacketUtil.Util.html#PacketUtil_Util_IsRealNumberString_
+  commentId: Overload:PacketUtil.Util.IsRealNumberString
+  isSpec: "True"
+  fullName: PacketUtil.Util.IsRealNumberString
+  nameWithType: Util.IsRealNumberString
+- uid: PacketUtil.Util.PrintByteArray(System.Byte[],PacketUtil.Util.VALUE_TYPE)
+  name: PrintByteArray(Byte[], Util.VALUE_TYPE)
+  href: api/PacketUtil.Util.html#PacketUtil_Util_PrintByteArray_System_Byte___PacketUtil_Util_VALUE_TYPE_
+  commentId: M:PacketUtil.Util.PrintByteArray(System.Byte[],PacketUtil.Util.VALUE_TYPE)
+  name.vb: PrintByteArray(Byte(), Util.VALUE_TYPE)
+  fullName: PacketUtil.Util.PrintByteArray(System.Byte[], PacketUtil.Util.VALUE_TYPE)
+  fullName.vb: PacketUtil.Util.PrintByteArray(System.Byte(), PacketUtil.Util.VALUE_TYPE)
+  nameWithType: Util.PrintByteArray(Byte[], Util.VALUE_TYPE)
+  nameWithType.vb: Util.PrintByteArray(Byte(), Util.VALUE_TYPE)
+- uid: PacketUtil.Util.PrintByteArray*
+  name: PrintByteArray
+  href: api/PacketUtil.Util.html#PacketUtil_Util_PrintByteArray_
+  commentId: Overload:PacketUtil.Util.PrintByteArray
+  isSpec: "True"
+  fullName: PacketUtil.Util.PrintByteArray
+  nameWithType: Util.PrintByteArray
+- uid: PacketUtil.Util.VALUE_TYPE
+  name: Util.VALUE_TYPE
+  href: api/PacketUtil.Util.VALUE_TYPE.html
+  commentId: T:PacketUtil.Util.VALUE_TYPE
+  fullName: PacketUtil.Util.VALUE_TYPE
+  nameWithType: Util.VALUE_TYPE
+- uid: PacketUtil.Util.VALUE_TYPE.BYTEARR
+  name: BYTEARR
+  href: api/PacketUtil.Util.VALUE_TYPE.html#PacketUtil_Util_VALUE_TYPE_BYTEARR
+  commentId: F:PacketUtil.Util.VALUE_TYPE.BYTEARR
+  fullName: PacketUtil.Util.VALUE_TYPE.BYTEARR
+  nameWithType: Util.VALUE_TYPE.BYTEARR
+- uid: PacketUtil.Util.VALUE_TYPE.HEXVALUE
+  name: HEXVALUE
+  href: api/PacketUtil.Util.VALUE_TYPE.html#PacketUtil_Util_VALUE_TYPE_HEXVALUE
+  commentId: F:PacketUtil.Util.VALUE_TYPE.HEXVALUE
+  fullName: PacketUtil.Util.VALUE_TYPE.HEXVALUE
+  nameWithType: Util.VALUE_TYPE.HEXVALUE
+- uid: PacketUtil.Util.VALUE_TYPE.INTVALUE
+  name: INTVALUE
+  href: api/PacketUtil.Util.VALUE_TYPE.html#PacketUtil_Util_VALUE_TYPE_INTVALUE
+  commentId: F:PacketUtil.Util.VALUE_TYPE.INTVALUE
+  fullName: PacketUtil.Util.VALUE_TYPE.INTVALUE
+  nameWithType: Util.VALUE_TYPE.INTVALUE
+- uid: PacketUtil.Value
+  name: PacketUtil.Value
+  href: api/PacketUtil.Value.html
+  commentId: N:PacketUtil.Value
+  fullName: PacketUtil.Value
+  nameWithType: PacketUtil.Value
+- uid: PacketUtil.Value.ValuesReadFromFile
+  name: ValuesReadFromFile
+  href: api/PacketUtil.Value.ValuesReadFromFile.html
+  commentId: T:PacketUtil.Value.ValuesReadFromFile
+  fullName: PacketUtil.Value.ValuesReadFromFile
+  nameWithType: ValuesReadFromFile
+- uid: PacketUtil.Value.ValuesReadFromFile.GetValuesFromJson(System.String)
+  name: GetValuesFromJson(String)
+  href: api/PacketUtil.Value.ValuesReadFromFile.html#PacketUtil_Value_ValuesReadFromFile_GetValuesFromJson_System_String_
+  commentId: M:PacketUtil.Value.ValuesReadFromFile.GetValuesFromJson(System.String)
+  fullName: PacketUtil.Value.ValuesReadFromFile.GetValuesFromJson(System.String)
+  nameWithType: ValuesReadFromFile.GetValuesFromJson(String)
+- uid: PacketUtil.Value.ValuesReadFromFile.GetValuesFromJson*
+  name: GetValuesFromJson
+  href: api/PacketUtil.Value.ValuesReadFromFile.html#PacketUtil_Value_ValuesReadFromFile_GetValuesFromJson_
+  commentId: Overload:PacketUtil.Value.ValuesReadFromFile.GetValuesFromJson
+  isSpec: "True"
+  fullName: PacketUtil.Value.ValuesReadFromFile.GetValuesFromJson
+  nameWithType: ValuesReadFromFile.GetValuesFromJson
+- uid: PacketUtil.Value.ValuesUtil
+  name: ValuesUtil
+  href: api/PacketUtil.Value.ValuesUtil.html
+  commentId: T:PacketUtil.Value.ValuesUtil
+  fullName: PacketUtil.Value.ValuesUtil
+  nameWithType: ValuesUtil
+- uid: PacketUtil.Value.ValuesUtil.GetTypeEffectivenessCheck(System.String)
+  name: GetTypeEffectivenessCheck(String)
+  href: api/PacketUtil.Value.ValuesUtil.html#PacketUtil_Value_ValuesUtil_GetTypeEffectivenessCheck_System_String_
+  commentId: M:PacketUtil.Value.ValuesUtil.GetTypeEffectivenessCheck(System.String)
+  fullName: PacketUtil.Value.ValuesUtil.GetTypeEffectivenessCheck(System.String)
+  nameWithType: ValuesUtil.GetTypeEffectivenessCheck(String)
+- uid: PacketUtil.Value.ValuesUtil.GetTypeEffectivenessCheck*
+  name: GetTypeEffectivenessCheck
+  href: api/PacketUtil.Value.ValuesUtil.html#PacketUtil_Value_ValuesUtil_GetTypeEffectivenessCheck_
+  commentId: Overload:PacketUtil.Value.ValuesUtil.GetTypeEffectivenessCheck
+  isSpec: "True"
+  fullName: PacketUtil.Value.ValuesUtil.GetTypeEffectivenessCheck
+  nameWithType: ValuesUtil.GetTypeEffectivenessCheck
+- uid: PacketUtil.Value.ValuesUtil.GetValuesFromStrFormat(System.String)
+  name: GetValuesFromStrFormat(String)
+  href: api/PacketUtil.Value.ValuesUtil.html#PacketUtil_Value_ValuesUtil_GetValuesFromStrFormat_System_String_
+  commentId: M:PacketUtil.Value.ValuesUtil.GetValuesFromStrFormat(System.String)
+  fullName: PacketUtil.Value.ValuesUtil.GetValuesFromStrFormat(System.String)
+  nameWithType: ValuesUtil.GetValuesFromStrFormat(String)
+- uid: PacketUtil.Value.ValuesUtil.GetValuesFromStrFormat*
+  name: GetValuesFromStrFormat
+  href: api/PacketUtil.Value.ValuesUtil.html#PacketUtil_Value_ValuesUtil_GetValuesFromStrFormat_
+  commentId: Overload:PacketUtil.Value.ValuesUtil.GetValuesFromStrFormat
+  isSpec: "True"
+  fullName: PacketUtil.Value.ValuesUtil.GetValuesFromStrFormat
+  nameWithType: ValuesUtil.GetValuesFromStrFormat
+- uid: PacketUtil.Value.ValuesUtil.valueParsingDataLength
+  name: valueParsingDataLength
+  href: api/PacketUtil.Value.ValuesUtil.html#PacketUtil_Value_ValuesUtil_valueParsingDataLength
+  commentId: F:PacketUtil.Value.ValuesUtil.valueParsingDataLength
+  fullName: PacketUtil.Value.ValuesUtil.valueParsingDataLength
+  nameWithType: ValuesUtil.valueParsingDataLength
+- uid: PacketUtil.Values
+  name: Values
+  href: api/PacketUtil.Values.html
+  commentId: T:PacketUtil.Values
+  fullName: PacketUtil.Values
+  nameWithType: Values
+- uid: PacketUtil.Values.#ctor
+  name: Values()
+  href: api/PacketUtil.Values.html#PacketUtil_Values__ctor
+  commentId: M:PacketUtil.Values.#ctor
+  fullName: PacketUtil.Values.Values()
+  nameWithType: Values.Values()
+- uid: PacketUtil.Values.#ctor(System.Int32)
+  name: Values(Int32)
+  href: api/PacketUtil.Values.html#PacketUtil_Values__ctor_System_Int32_
+  commentId: M:PacketUtil.Values.#ctor(System.Int32)
+  fullName: PacketUtil.Values.Values(System.Int32)
+  nameWithType: Values.Values(Int32)
+- uid: PacketUtil.Values.#ctor(System.String,System.Int32)
+  name: Values(String, Int32)
+  href: api/PacketUtil.Values.html#PacketUtil_Values__ctor_System_String_System_Int32_
+  commentId: M:PacketUtil.Values.#ctor(System.String,System.Int32)
+  fullName: PacketUtil.Values.Values(System.String, System.Int32)
+  nameWithType: Values.Values(String, Int32)
+- uid: PacketUtil.Values.#ctor(System.String,System.Int32,System.String,System.Int32,System.Double)
+  name: Values(String, Int32, String, Int32, Double)
+  href: api/PacketUtil.Values.html#PacketUtil_Values__ctor_System_String_System_Int32_System_String_System_Int32_System_Double_
+  commentId: M:PacketUtil.Values.#ctor(System.String,System.Int32,System.String,System.Int32,System.Double)
+  fullName: PacketUtil.Values.Values(System.String, System.Int32, System.String, System.Int32, System.Double)
+  nameWithType: Values.Values(String, Int32, String, Int32, Double)
+- uid: PacketUtil.Values.#ctor*
+  name: Values
+  href: api/PacketUtil.Values.html#PacketUtil_Values__ctor_
+  commentId: Overload:PacketUtil.Values.#ctor
+  isSpec: "True"
+  fullName: PacketUtil.Values.Values
+  nameWithType: Values.Values
+- uid: PacketUtil.Values.AddSubValues(PacketUtil.Values)
+  name: AddSubValues(Values)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_AddSubValues_PacketUtil_Values_
+  commentId: M:PacketUtil.Values.AddSubValues(PacketUtil.Values)
+  fullName: PacketUtil.Values.AddSubValues(PacketUtil.Values)
+  nameWithType: Values.AddSubValues(Values)
+- uid: PacketUtil.Values.AddSubValues*
+  name: AddSubValues
+  href: api/PacketUtil.Values.html#PacketUtil_Values_AddSubValues_
+  commentId: Overload:PacketUtil.Values.AddSubValues
+  isSpec: "True"
+  fullName: PacketUtil.Values.AddSubValues
+  nameWithType: Values.AddSubValues
+- uid: PacketUtil.Values.ArrayPosition
+  name: ArrayPosition
+  href: api/PacketUtil.Values.html#PacketUtil_Values_ArrayPosition
+  commentId: P:PacketUtil.Values.ArrayPosition
+  fullName: PacketUtil.Values.ArrayPosition
+  nameWithType: Values.ArrayPosition
+- uid: PacketUtil.Values.ArrayPosition*
+  name: ArrayPosition
+  href: api/PacketUtil.Values.html#PacketUtil_Values_ArrayPosition_
+  commentId: Overload:PacketUtil.Values.ArrayPosition
+  isSpec: "True"
+  fullName: PacketUtil.Values.ArrayPosition
+  nameWithType: Values.ArrayPosition
+- uid: PacketUtil.Values.Builder(System.String,System.String,System.Int32,System.Int32,System.Double)
+  name: Builder(String, String, Int32, Int32, Double)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Builder_System_String_System_String_System_Int32_System_Int32_System_Double_
+  commentId: M:PacketUtil.Values.Builder(System.String,System.String,System.Int32,System.Int32,System.Double)
+  fullName: PacketUtil.Values.Builder(System.String, System.String, System.Int32, System.Int32, System.Double)
+  nameWithType: Values.Builder(String, String, Int32, Int32, Double)
+- uid: PacketUtil.Values.Builder*
+  name: Builder
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Builder_
+  commentId: Overload:PacketUtil.Values.Builder
+  isSpec: "True"
+  fullName: PacketUtil.Values.Builder
+  nameWithType: Values.Builder
+- uid: PacketUtil.Values.DecoderPacket(System.Byte[],System.String,PacketUtil.Values)
+  name: DecoderPacket(Byte[], String, Values)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_DecoderPacket_System_Byte___System_String_PacketUtil_Values_
+  commentId: M:PacketUtil.Values.DecoderPacket(System.Byte[],System.String,PacketUtil.Values)
+  name.vb: DecoderPacket(Byte(), String, Values)
+  fullName: PacketUtil.Values.DecoderPacket(System.Byte[], System.String, PacketUtil.Values)
+  fullName.vb: PacketUtil.Values.DecoderPacket(System.Byte(), System.String, PacketUtil.Values)
+  nameWithType: Values.DecoderPacket(Byte[], String, Values)
+  nameWithType.vb: Values.DecoderPacket(Byte(), String, Values)
+- uid: PacketUtil.Values.DecoderPacket*
+  name: DecoderPacket
+  href: api/PacketUtil.Values.html#PacketUtil_Values_DecoderPacket_
+  commentId: Overload:PacketUtil.Values.DecoderPacket
+  isSpec: "True"
+  fullName: PacketUtil.Values.DecoderPacket
+  nameWithType: Values.DecoderPacket
+- uid: PacketUtil.Values.GetBitFieldClass(System.String)
+  name: GetBitFieldClass(String)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_GetBitFieldClass_System_String_
+  commentId: M:PacketUtil.Values.GetBitFieldClass(System.String)
+  fullName: PacketUtil.Values.GetBitFieldClass(System.String)
+  nameWithType: Values.GetBitFieldClass(String)
+- uid: PacketUtil.Values.GetBitFieldClass*
+  name: GetBitFieldClass
+  href: api/PacketUtil.Values.html#PacketUtil_Values_GetBitFieldClass_
+  commentId: Overload:PacketUtil.Values.GetBitFieldClass
+  isSpec: "True"
+  fullName: PacketUtil.Values.GetBitFieldClass
+  nameWithType: Values.GetBitFieldClass
+- uid: PacketUtil.Values.GetStrValue(System.Byte[],System.String)
+  name: GetStrValue(Byte[], String)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_GetStrValue_System_Byte___System_String_
+  commentId: M:PacketUtil.Values.GetStrValue(System.Byte[],System.String)
+  name.vb: GetStrValue(Byte(), String)
+  fullName: PacketUtil.Values.GetStrValue(System.Byte[], System.String)
+  fullName.vb: PacketUtil.Values.GetStrValue(System.Byte(), System.String)
+  nameWithType: Values.GetStrValue(Byte[], String)
+  nameWithType.vb: Values.GetStrValue(Byte(), String)
+- uid: PacketUtil.Values.GetStrValue*
+  name: GetStrValue
+  href: api/PacketUtil.Values.html#PacketUtil_Values_GetStrValue_
+  commentId: Overload:PacketUtil.Values.GetStrValue
+  isSpec: "True"
+  fullName: PacketUtil.Values.GetStrValue
+  nameWithType: Values.GetStrValue
+- uid: PacketUtil.Values.GetValue(System.Byte[],System.String,System.String)
+  name: GetValue(Byte[], String, String)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_GetValue_System_Byte___System_String_System_String_
+  commentId: M:PacketUtil.Values.GetValue(System.Byte[],System.String,System.String)
+  name.vb: GetValue(Byte(), String, String)
+  fullName: PacketUtil.Values.GetValue(System.Byte[], System.String, System.String)
+  fullName.vb: PacketUtil.Values.GetValue(System.Byte(), System.String, System.String)
+  nameWithType: Values.GetValue(Byte[], String, String)
+  nameWithType.vb: Values.GetValue(Byte(), String, String)
+- uid: PacketUtil.Values.GetValue*
+  name: GetValue
+  href: api/PacketUtil.Values.html#PacketUtil_Values_GetValue_
+  commentId: Overload:PacketUtil.Values.GetValue
+  isSpec: "True"
+  fullName: PacketUtil.Values.GetValue
+  nameWithType: Values.GetValue
+- uid: PacketUtil.Values.GetValue``1(System.Byte[],System.String,System.String,System.Int32)
+  name: GetValue<T>(Byte[], String, String, Int32)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_GetValue__1_System_Byte___System_String_System_String_System_Int32_
+  commentId: M:PacketUtil.Values.GetValue``1(System.Byte[],System.String,System.String,System.Int32)
+  name.vb: GetValue(Of T)(Byte(), String, String, Int32)
+  fullName: PacketUtil.Values.GetValue<T>(System.Byte[], System.String, System.String, System.Int32)
+  fullName.vb: PacketUtil.Values.GetValue(Of T)(System.Byte(), System.String, System.String, System.Int32)
+  nameWithType: Values.GetValue<T>(Byte[], String, String, Int32)
+  nameWithType.vb: Values.GetValue(Of T)(Byte(), String, String, Int32)
+- uid: PacketUtil.Values.Length
+  name: Length
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Length
+  commentId: P:PacketUtil.Values.Length
+  fullName: PacketUtil.Values.Length
+  nameWithType: Values.Length
+- uid: PacketUtil.Values.Length*
+  name: Length
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Length_
+  commentId: Overload:PacketUtil.Values.Length
+  isSpec: "True"
+  fullName: PacketUtil.Values.Length
+  nameWithType: Values.Length
+- uid: PacketUtil.Values.LSB
+  name: LSB
+  href: api/PacketUtil.Values.html#PacketUtil_Values_LSB
+  commentId: P:PacketUtil.Values.LSB
+  fullName: PacketUtil.Values.LSB
+  nameWithType: Values.LSB
+- uid: PacketUtil.Values.LSB*
+  name: LSB
+  href: api/PacketUtil.Values.html#PacketUtil_Values_LSB_
+  commentId: Overload:PacketUtil.Values.LSB
+  isSpec: "True"
+  fullName: PacketUtil.Values.LSB
+  nameWithType: Values.LSB
+- uid: PacketUtil.Values.Name
+  name: Name
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Name
+  commentId: P:PacketUtil.Values.Name
+  fullName: PacketUtil.Values.Name
+  nameWithType: Values.Name
+- uid: PacketUtil.Values.Name*
+  name: Name
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Name_
+  commentId: Overload:PacketUtil.Values.Name
+  isSpec: "True"
+  fullName: PacketUtil.Values.Name
+  nameWithType: Values.Name
+- uid: PacketUtil.Values.Parent
+  name: Parent
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Parent
+  commentId: P:PacketUtil.Values.Parent
+  fullName: PacketUtil.Values.Parent
+  nameWithType: Values.Parent
+- uid: PacketUtil.Values.Parent*
+  name: Parent
+  href: api/PacketUtil.Values.html#PacketUtil_Values_Parent_
+  commentId: Overload:PacketUtil.Values.Parent
+  isSpec: "True"
+  fullName: PacketUtil.Values.Parent
+  nameWithType: Values.Parent
+- uid: PacketUtil.Values.SeekField(PacketUtil.Values,System.String)
+  name: SeekField(Values, String)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_SeekField_PacketUtil_Values_System_String_
+  commentId: M:PacketUtil.Values.SeekField(PacketUtil.Values,System.String)
+  fullName: PacketUtil.Values.SeekField(PacketUtil.Values, System.String)
+  nameWithType: Values.SeekField(Values, String)
+- uid: PacketUtil.Values.SeekField*
+  name: SeekField
+  href: api/PacketUtil.Values.html#PacketUtil_Values_SeekField_
+  commentId: Overload:PacketUtil.Values.SeekField
+  isSpec: "True"
+  fullName: PacketUtil.Values.SeekField
+  nameWithType: Values.SeekField
+- uid: PacketUtil.Values.SeekFieldName(System.String)
+  name: SeekFieldName(String)
+  href: api/PacketUtil.Values.html#PacketUtil_Values_SeekFieldName_System_String_
+  commentId: M:PacketUtil.Values.SeekFieldName(System.String)
+  fullName: PacketUtil.Values.SeekFieldName(System.String)
+  nameWithType: Values.SeekFieldName(String)
+- uid: PacketUtil.Values.SeekFieldName*
+  name: SeekFieldName
+  href: api/PacketUtil.Values.html#PacketUtil_Values_SeekFieldName_
+  commentId: Overload:PacketUtil.Values.SeekFieldName
+  isSpec: "True"
+  fullName: PacketUtil.Values.SeekFieldName
+  nameWithType: Values.SeekFieldName
+- uid: PacketUtil.Values.SubValues
+  name: SubValues
+  href: api/PacketUtil.Values.html#PacketUtil_Values_SubValues
+  commentId: F:PacketUtil.Values.SubValues
+  fullName: PacketUtil.Values.SubValues
+  nameWithType: Values.SubValues
+- uid: PacketUtil.Values.ToParsing(System.Byte[]@)
+  name: ToParsing(ref Byte[])
+  href: api/PacketUtil.Values.html#PacketUtil_Values_ToParsing_System_Byte____
+  commentId: M:PacketUtil.Values.ToParsing(System.Byte[]@)
+  name.vb: ToParsing(ByRef Byte())
+  fullName: PacketUtil.Values.ToParsing(ref System.Byte[])
+  fullName.vb: PacketUtil.Values.ToParsing(ByRef System.Byte())
+  nameWithType: Values.ToParsing(ref Byte[])
+  nameWithType.vb: Values.ToParsing(ByRef Byte())
+- uid: PacketUtil.Values.ToParsing*
+  name: ToParsing
+  href: api/PacketUtil.Values.html#PacketUtil_Values_ToParsing_
+  commentId: Overload:PacketUtil.Values.ToParsing
+  isSpec: "True"
+  fullName: PacketUtil.Values.ToParsing
+  nameWithType: Values.ToParsing
+- uid: PacketUtil.Values.ToString
+  name: ToString()
+  href: api/PacketUtil.Values.html#PacketUtil_Values_ToString
+  commentId: M:PacketUtil.Values.ToString
+  fullName: PacketUtil.Values.ToString()
+  nameWithType: Values.ToString()
+- uid: PacketUtil.Values.ToString*
+  name: ToString
+  href: api/PacketUtil.Values.html#PacketUtil_Values_ToString_
+  commentId: Overload:PacketUtil.Values.ToString
+  isSpec: "True"
+  fullName: PacketUtil.Values.ToString
+  nameWithType: Values.ToString
+- uid: PacketUtil.Values.TypeOfValue
+  name: TypeOfValue
+  href: api/PacketUtil.Values.html#PacketUtil_Values_TypeOfValue
+  commentId: P:PacketUtil.Values.TypeOfValue
+  fullName: PacketUtil.Values.TypeOfValue
+  nameWithType: Values.TypeOfValue
+- uid: PacketUtil.Values.TypeOfValue*
+  name: TypeOfValue
+  href: api/PacketUtil.Values.html#PacketUtil_Values_TypeOfValue_
+  commentId: Overload:PacketUtil.Values.TypeOfValue
+  isSpec: "True"
+  fullName: PacketUtil.Values.TypeOfValue
+  nameWithType: Values.TypeOfValue
