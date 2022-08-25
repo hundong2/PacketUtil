@@ -21,7 +21,7 @@ namespace PacketUtil
         public double LSB { get; private set; } // LSB Value (option)
         public Values Parent { get; private set; }
        
-        private Dictionary<string, Values> SubValues = new Dictionary<string, Values>();
+        public Dictionary<string, Values> SubValues = new Dictionary<string, Values>();
         #region Builder Class of Values
         /// <summary>
         /// 

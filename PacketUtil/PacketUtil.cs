@@ -18,8 +18,8 @@ namespace PacketUtil
 
 
             
-            TestUtilGetByteFieldValue();
-            //TestJsonRead();
+            //TestUtilGetByteFieldValue();
+            TestJsonRead();
             //testValueUtil();
         }
         static public void testValueUtil()
