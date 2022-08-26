@@ -1,1 +1,0 @@
-{"message":"Invalid triple slash comment is ignored: <!-- Badly formed XML comment ignored for member \"M:PacketUtil.Util.GetByteFieldValue``1(``0,System.Int32,System.Int32)\" -->\r\n","source":"MetadataCommand.ExtractMetadata","date_time":"2022-08-25T08:01:16.8654143Z","message_severity":"warning","correlation_id":"DB66E93A-CFA2-4A84-AB09-A0650A0F6964.1.1.8"}

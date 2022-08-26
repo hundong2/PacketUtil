@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Text.RegularExpressions;
-
-namespace PacketUtil
+﻿namespace PacketUtil
 {
-    public static class Util
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Text.RegularExpressions;
+
+    public static class Util 
     {
         public enum VALUE_TYPE
         {
@@ -72,7 +72,6 @@ namespace PacketUtil
             return hex_val;
         }
         #endregion
-
         /// <summary>
         /// Get information of type, type size and Type of type
         /// </summary>
@@ -114,8 +113,6 @@ namespace PacketUtil
 
             return returnSize;
         }
-
-
         /// <summary>
         /// Get Packet Value 
         /// </summary>
@@ -125,7 +122,7 @@ namespace PacketUtil
         /// <param name="typeofvalue"></param>
         /// <param name="length"></param>
         /// <param name="arrayposition"></param>
-        /// <returns></returns>
+        /// <returns></returns>W
         static public Object DecoderPacket(byte[] arr, string pType, string typeofvalue, int length, int arrayposition)
         {
 
@@ -159,7 +156,6 @@ namespace PacketUtil
             }
             return (object)null;
         }
-
         #region regex string Real number check 
         /// <summary>
         /// 실수 문자열 여부 구하기
@@ -174,6 +170,7 @@ namespace PacketUtil
                 }
                 return Regex.IsMatch(source, @"^[+-]?\d*(\.?\d*)$");
             }
+
 
 
         #endregion

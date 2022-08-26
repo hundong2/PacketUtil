@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PacketUtil
+﻿namespace PacketUtil
 {
-
-
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
     /// <summary>
-    /// this class Used Util.cs in PacketUtil namespace 
+    /// Packet Field Saving Class
     /// </summary>
-    public class Values 
+    public class Values : IDisposable
     {
 
+
+        /// <value>Name</value>
         public string Name { get; private set; }    //vale field name
         public int ArrayPosition { get; private set; } //start Position
         public int Length { get; private set; }     //vale field length
@@ -41,6 +40,13 @@ namespace PacketUtil
         {
 
         }
+        /// <summary>
+        /// Class of Values
+        /// </summary>
+        /// <param name="length">
+        /// Values Packet Length
+        /// </param>
+          
         protected Values(int length) { this.Length = length; ArrayPosition = 0; }
         protected Values(string name, int length)
         {
@@ -85,6 +91,8 @@ namespace PacketUtil
             if (mValue == null) return string.Empty;
             return mValue.ToString();
         }
+
+
         /// <summary>
         /// Value Class, GetValue information function
         /// </summary>
@@ -329,6 +337,11 @@ namespace PacketUtil
             }
             //return base.ToString();
             return ReturnValue;
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }
